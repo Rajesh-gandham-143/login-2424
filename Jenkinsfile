@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo rm -rf /usr/share/nginx/html/*'
-                sh 'sudo cp -r img_avatar2.png /usr/share/nginx/html/'
-                sh 'sudo cp -r index.html /usr/share/nginx/html/'
+                sh 'sudo rm -rf /var/www/html*'
+                sh 'sudo cp -r img_avatar2.png /var/www/html/'
+                sh 'sudo cp -r index.html /var/www/html/'
             }
         }
         stage('Test') {
