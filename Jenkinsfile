@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'sudo rm -rf /usr/share/nginx/html/*'
-                sh 'cp -r * /usr/share/nginx/html/'
+                sh 'cp -r img_avatar2.png /usr/share/nginx/html/'
+                sh 'cp -r index.html /usr/share/nginx/html/'
             }
         }
         stage('Test') {
