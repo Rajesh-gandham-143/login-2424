@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'rm -rf /usr/share/html/*'
+                sh 'cp -r * /usr/share/html/'
+            }
+        }
+    }
+}
