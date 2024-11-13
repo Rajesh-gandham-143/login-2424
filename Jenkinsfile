@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cat /os/releases'
+                sh 'cat /etc/os-release'
             }
         }
         stage('Test') {
