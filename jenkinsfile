@@ -4,8 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'rm -rf /usr/share/html/*'
-                sh 'cp -r * /usr/share/html/'
+                sh 'cat /os/releases'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'df -h'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'free'
             }
         }
     }
