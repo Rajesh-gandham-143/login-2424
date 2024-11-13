@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'rm -rf /usr/share/nginx/html/*'
+                sh 'sudo rm -rf /usr/share/nginx/html/*'
                 sh 'cp -r * /usr/share/nginx/html/'
             }
         }
