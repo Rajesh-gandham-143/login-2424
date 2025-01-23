@@ -4,7 +4,8 @@ pipeline {
         stage('deploy') {
             steps{
                 sh 'rm -rf /var/www/html/*'
-                sh 'cp -r . /var/www/html'
+                sh 'cp img_avatar2.png  /var/www/html'
+                sh 'cp index.html  /var/www/html'
             }
 
         }
