@@ -3,8 +3,8 @@ pipeline {
     stages{
         stage('deploy') {
             steps{
-                sh 'sudo rm -rf /var/www/html/*'
-                sh 'sudo copy . /var/www/html'
+                sh 'rm -rf /var/www/html/*'
+                sh 'copy . /var/www/html'
             }
 
         }
