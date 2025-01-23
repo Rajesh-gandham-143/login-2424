@@ -8,6 +8,12 @@ pipeline {
             }
 
         }
+        stage('info') {
+            steps{
+                sh 'df -h'
+                sh 'free -h'
+            }
+        }
     }
     
 }
